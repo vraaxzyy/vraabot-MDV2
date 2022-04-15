@@ -1,4 +1,4 @@
-(/* maap kalau ada bug nya :))
+/* maap kalau ada bug nya :))
   kalau eror chat saja !.
   contact me : wa.me/+6282115946480
 */
@@ -35,28 +35,28 @@ let vote = db.data.others.vote = []
 
 // Menunya
 const  { ind } = require(`./language`)
-lang = sayang // Menunya
+lang = ind // Menunya
 
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 if(time2 < "23:59:00"){
-var ucapanWaktu = 'Selamat Malam🌚'
+var ucapanWaktu = 'Selamat Malam'
                                         }
 if(time2 < "19:00:00"){
-var ucapanWaktu = 'Selamat Petang🌑'
+var ucapanWaktu = 'Selamat Petang'
                                          }
 if(time2 < "18:00:00"){
-var ucapanWaktu = 'Selamat Sore🌘️'
+var ucapanWaktu = 'Selamat Sore'
                                          }
 if(time2 < "15:00:00"){
-var ucapanWaktu = 'Selamat Siang🌕'
+var ucapanWaktu = 'Selamat Siang'
                                          }
 if(time2 < "11:00:00"){
-var ucapanWaktu = 'Selamat Pagi🌝'
+var ucapanWaktu = 'Selamat Pagi'
                                          }
 if(time2 < "05:00:00"){
-var ucapanWaktu = 'Selamat pagi🌖'
+var ucapanWaktu = 'Selamat Malam'
                                          }
-                                         
+
 module.exports = kiki = async (kiki, m, chatUpdate, store) => {
     try {
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ''
@@ -2571,7 +2571,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
 case 'menu':
-await kiki.send5ButImg(from, `` + '' + lang.menu(prefix), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "YouTube Cerator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "list menu","id": 'command'}},{"quickReplyButton": {"displayText": "allmenu","id": 'allmenu'}}] )
+await kiki.send5ButImg(from, `` + '' + lang.menu(prefix, ucapanWaktu, salam, pushname), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "YouTube Cerator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "list menu","id": 'command'}},{"quickReplyButton": {"displayText": "allmenu","id": 'allmenu'}}] )
 break
 case 'allmenu':
 await kiki.send5ButImg(from, `` + '' + lang.allmenu(prefix), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "YouTube Cerator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
