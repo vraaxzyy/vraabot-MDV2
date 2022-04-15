@@ -2,7 +2,7 @@
 */
 
 // Menu
-exports.menu = (salam, pushname, ucapanWaktu) => {
+exports.menu = (prefix, salam, pushname, ucapanWaktu) => {
 return `hai kak ${pushname} selamat ${ucapanWaktu} 
 saya bot asisten anda  , bot ini adalah bot multi device jika ada bug mohon di maklumi ya kak🙏 
 `
