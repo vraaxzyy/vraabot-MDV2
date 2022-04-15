@@ -35,7 +35,7 @@ let vote = db.data.others.vote = []
 
 // Menunya
 const  { ind } = require(`./language`)
-lang = ind // Menunya
+lang = sayang // Menunya
 
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 if(time2 < "23:59:00"){
