@@ -1,4 +1,4 @@
-/* maap kalau ada bug nya :))
+(/* maap kalau ada bug nya :))
   kalau eror chat saja !.
   contact me : wa.me/+6282115946480
 */
@@ -37,6 +37,26 @@ let vote = db.data.others.vote = []
 const  { ind } = require(`./language`)
 lang = ind // Menunya
 
+const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
+if(time2 < "23:59:00"){
+var ucapanWaktu = 'Selamat Malam🌚'
+                                        }
+if(time2 < "19:00:00"){
+var ucapanWaktu = 'Selamat Petang🌑'
+                                         }
+if(time2 < "18:00:00"){
+var ucapanWaktu = 'Selamat Sore🌘️'
+                                         }
+if(time2 < "15:00:00"){
+var ucapanWaktu = 'Selamat Siang🌕'
+                                         }
+if(time2 < "11:00:00"){
+var ucapanWaktu = 'Selamat Pagi🌝'
+                                         }
+if(time2 < "05:00:00"){
+var ucapanWaktu = 'Selamat pagi🌖'
+                                         }
+                                         
 module.exports = kiki = async (kiki, m, chatUpdate, store) => {
     try {
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ''
