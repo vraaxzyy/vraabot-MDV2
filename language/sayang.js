@@ -2,8 +2,9 @@
 */
 
 // Menu
-exports.menu = (salam, pushname) =>{
-return `menu ? 
+exports.menu = (salam, pushname, ucapanWaktu)
+return `hai kak ${pushname} selamat ${ucapanWaktu} 
+saya bot asisten anda  , bot ini adalah bot mukti device jika ada bug mohon di maklumi ya kak🙏🏻
 `
 } 
 
