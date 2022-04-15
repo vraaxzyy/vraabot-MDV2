@@ -2571,7 +2571,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
 case 'menu':
-await kiki.send5ButImg(from, `` + '' + lang.menu(prefix, ucapanWaktu, salam, pushname), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "YouTube Cerator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "list menu","id": 'command'}},{"quickReplyButton": {"displayText": "allmenu","id": 'allmenu'}}] )
+await kiki.send5ButImg(from, `` + '' + lang.menu(prefix, ucapanWaktu, pushname), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "YouTube Cerator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "list menu","id": 'command'}},{"quickReplyButton": {"displayText": "allmenu","id": 'allmenu'}}] )
 break
 case 'allmenu':
 await kiki.send5ButImg(from, `` + '' + lang.allmenu(prefix), `© ${footer}`,thumb, [{"urlButton": {"displayText": "Source Code","url": `${sc}`}},{"urlButton": {"displayText": "YouTube Cerator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}}] )
