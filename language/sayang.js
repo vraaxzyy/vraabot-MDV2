@@ -3,10 +3,11 @@
 
 // Menu
 exports.menu = (pushname, ucapanWaktu) => {
-return `hai kak ${pushname} ${ucapanWaktu} 
- saya bot asisten anda ><
+return `hai kak ${m.pushName} ${ucapanWaktu}
  
- bot ini gratis jika ada yang memperjualkan silahkan lapor ke owner. `
+saya bot asisten anda ><
+ 
+bot ini gratis jika ada yang memperjualkan silahkan lapor ke owner. `
 }
 
 // All Menu
