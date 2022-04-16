@@ -2,11 +2,12 @@
 */
 
 // Menu
-exports.menu = (pushname, ucapanWaktu)
+exports.menu = (pushname, ucapanWaktu) => {
 return `hai kak ${pushname} ${ucapanWaktu} 
-saya bot asisten anda  , bot ini adalah bot multi device jika ada bug mohon di maklumi ya kak🙏🏻`
-} 
-
+ saya bot asisten anda ><
+ 
+ bot ini gratis jika ada yang memperjualkan silahkan lapor ke owner. `
+}
 
 // All Menu
 exports.allmenu = (prefix) => {
@@ -714,9 +715,10 @@ exports.thanksto = () => {
 ├ Zeeoneofc
 ├ FatihArridho
 ├ Sanzy
-├ Kiki vz.
+├ kiki vz.
 ├ RiychDwayne
 ├ Fadly ID
+├ Kirbotz
 ├ X-none Team
 └───────
 `
