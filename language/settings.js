@@ -17,23 +17,23 @@ global.APIKeys = {
 }
 
 // Owner
-global.owner = ['6282115946480','6282115946480','+6282115946480']
-global.ownernomer = '6282115946480'
-global.premium = ['6282115946480']
-global.ownername = 'kiki vz'
-global.botname = 'vraabot'
-global.footer = 'vraabot asisten anda'
-global.email = 'vraakeren@gmail.com'
-global.ig = 'https://youtube.com/channel/UCjjuhOD-Mt2XrKFptMVDysQ'
-global.region = 'indonesia'// 
+global.owner = ['ubah nomor kamu','nomor kamu','nomor kamu']
+global.ownernomer = 'nomor kamu'
+global.premium = ['nomor kamu']
+global.ownername = 'nomor kamu'
+global.botname = 'nama bot kamu'
+global.footer = 'buat fake bebas terserah'
+global.email = 'email kamu'
+global.ig = 'https://youtube.com/channel/UCjjuhOD-Mt2XrKFptMVDysQ'// ubah yutub kamu atau ig kalau ga punya jangan di apus wk
+global.region = 'indonesia'// bebas
 
 // Keperluan buttons
-global.myweb = 'https://youtube.com/channel/UCjjuhOD-Mt2XrKFptMVDysQ'
-global.sc = 'https://github.com/kikivz/vraabot-MD'
-global.grupowner ='https://chat.whatsapp.com/JOxS05d1WWO529F40SEVEa'
+global.myweb = 'https://youtube.com/channel/UCjjuhOD-Mt2XrKFptMVDysQ'// ytuub kamu
+global.sc = 'https://github.com/kikivz/vraabot-MD'// bebas kalau ga da jangam di apus 
+global.grupowner ='https://chat.whatsapp.com/JOxS05d1WWO529F40SEVEa'// grup kamu 
 // Wm
-global.packname = 'vraabot'
-global.author = 'cerated by kiki vz'
+global.packname = 'vraabot'// buat wm sticker bebas
+global.author = 'cerated by kiki vz' // sama aja 
 
 // Thumb & Image random
 global.thumb = fs.readFileSync('./language/kiki.jpg')// jangan di ubah nanti eror.
